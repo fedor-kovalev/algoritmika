@@ -18,3 +18,5 @@ function shuttle!(stop_condition::Function, r, side)
     end
     move!(r, side)
 end
+
+# shuttle!(isborder, r, Nord)
