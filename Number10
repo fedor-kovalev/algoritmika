@@ -9,7 +9,7 @@ function check(robot, x, y, r):nothing
     end
 end
  
-function to_start(robot, x, y):nothing
+function to_start(robot, x, y)::nothing
     while x > 0
         move!(robot, West)
         x -= 1
@@ -20,7 +20,7 @@ function to_start(robot, x, y):nothing
     end
 end
  
-function result(robot, r):nothing
+function result(robot, r)::nothing
     x = 0
     y = 0
     while !isborder(robot, West)
