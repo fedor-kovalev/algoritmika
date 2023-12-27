@@ -15,10 +15,10 @@ function task7!(r, Prohod)
     i = 2
     while isborder(r, Prohod)
         if i % 2 == 1
-            move_by_steps(r, Ost, i)
+            move_by_steps!(r, Ost, i)
             i += 1
         else
-            move_by_steps(r, West, i)
+            move_by_steps!(r, West, i)
             i += 1
         end
     end
