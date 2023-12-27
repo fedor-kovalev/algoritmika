@@ -17,3 +17,5 @@ function spiral!(stop_condition::Function, robot)
         k += 2
     end
 end
+
+#spiral!(put_marker!, r)
