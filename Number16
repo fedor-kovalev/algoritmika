@@ -1,5 +1,12 @@
 using HorizonSideRobots
 r = Robot(animate = true)
+
+function move_by_steps(r, Side, Numsteps)
+    while Numsteps != 0
+        move!(r, Side)
+        Numsteps -= 1
+    end
+end
  
 function shuttle!(stop_condition::Function, r, side)
     side1 = Ost
